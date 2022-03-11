@@ -6,11 +6,32 @@
 
 
 
-density_list = ("Materials Density List ", "Aluminium: 2.74gm/cc ", "Brass8020: 8.49gm/cc", "Copper: 8.96gm/cc", "Gut: 1.27gm/cc", "KanthanID: 7.25gm/cc",
+# density_list = ("Materials Density List ", "Aluminium: 2.74gm/cc ", "Brass8020: 8.49gm/cc", "Copper: 8.96gm/cc", "Gut: 1.27gm/cc", "KanthanID: 7.25gm/cc",
 
-      "Monel400: 8.80gm/cc", "Nickel: 8.90", "Nylon: 1.06gm/cc", "Phosphor Bronze: 8.80", "PVDF: 1.70", "Silver: 10.50gm/cc",
+#       "Monel400: 8.80gm/cc", "Nickel: 8.90", "Nylon: 1.06gm/cc", "Phosphor Bronze: 8.80", "PVDF: 1.70", "Silver: 10.50gm/cc",
 
-      "SS430: 7.75gm/cc", "SS304: 8.03gm/cc", "Steel: 7.81gm/cc", "Titanium: 4.40gm/cc", "Tungsten: 19.20gm/cc", "Zyex: 1.30gm/cc" , "33%Al67%Cu: 6.89")
+#       "SS430: 7.75gm/cc", "SS304: 8.03gm/cc", "Steel: 7.81gm/cc", "Titanium: 4.40gm/cc", "Tungsten: 19.20gm/cc", "Zyex: 1.30gm/cc" , "33%Al67%Cu: 6.89")
+
+density_list = {
+      "Aluminium": "2.74gm/cc", 
+      "Brass8020": "8.49gm/cc", 
+      "Copper": "8.96gm/cc", 
+      "Gut": "1.27gm/cc", 
+      "KanthanID": "7.25gm/cc",
+      "Monel400": "8.80gm/cc", 
+      "Nickel": "8.90", 
+      "Nylon": "1.06gm/cc", 
+      "Phosphor Bronze": "8.80", 
+      "PVDF": "1.70", 
+      "Silver": "10.50gm/cc",
+      "SS430": "7.75gm/cc", 
+      "SS304": "8.03gm/cc", 
+      "Steel": "7.81gm/cc", 
+      "Titanium": "4.40gm/cc", 
+      "Tungsten": "19.20gm/cc", 
+      "Zyex": "1.30gm/cc" , 
+      "33%Al67%Cu": "6.89"
+}
 
 
 
@@ -18,7 +39,7 @@ density_list = ("Materials Density List ", "Aluminium: 2.74gm/cc ", "Brass8020: 
 # Get Data for calculations
 
 def greeting():
-      print("Welcome to the D'Addario String Calculator")
+      print("\nWelcome to the D'Addario String Calculator\n")
       
 def calculateWeight():
       weight = 454 * float(input("what is the weight in pounds: "))
