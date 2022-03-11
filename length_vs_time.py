@@ -41,13 +41,13 @@ density_list = {
 def greeting():
       print("\nWelcome to the D'Addario String Calculator\n")
       
-def calculateWeight():
-      weight = 454 * float(input("what is the weight in pounds: "))
-      return weight
-
 def printDensityList():
       for lang in density_list:
             print(lang)
+      
+def calculateWeight():
+      weight = 454 * float(input("what is the weight in pounds: "))
+      return weight
 
 def getDensity():
       density = float(input("what is the density in gram/cm3: "))
@@ -77,15 +77,15 @@ def calculateWireRadius():
 
 def calculateWireVolume():
       wire_volume = weight/(density*2.54**3)
-      print("Volume of the wire: ", format(wire_volume, ".3f"), "inch3")
+      print(f"Volume of the wire: {wire_volume} inch3")
       
 def calculateLength():
       length = wire_volume/(3.14*wire_radius**2)
-      print("Wire length: ", format(length, ".3f"), "inches")
+      print(f"Wire length: {length} inches")
 
 def calculateWireTurnLength():
       wire_turn_length = (core_diameter+wire_diameter)*3.14
-      print("wire circumference: ", format(wire_turn_length, ".5f"))
+      print(f"Wire circumference: {wire_turn_length}")
       
 def calculateTotalTime():
       total_time = (length/(RPM*wire_turn_length))/60
@@ -95,15 +95,15 @@ def calculateTotalTime():
 
 def calculateNumberofLoops():
       number_of_loops = (string_length/wire_diameter)
-      print("Number of Loops: ", format(number_of_loops, ".2f"), "inches")
+      print(f"Number of Loops: {number_of_loops} inches")
       
 def LengthOfWireOneString():
       length_of_wire_per_one_string = number_of_loops * wire_turn_length
-      print("Length of wire per one string: ", format(length_of_wire_per_one_string, ".2f"), "inches")
+      print(f"Length of wire per one string: {length_of_wire_per_one_string} inches")
       
 def stringPerSpool():
       number_of_string_per_spool = length/length_of_wire_per_one_string
-      print("Strings per Spool:", format(number_of_string_per_spool, ".1f"))
+      print(f"Strings per Spool: {number_of_string_per_spool}")
 
 
 
